@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="wraper">
+    <div class="card" *ngFor="let card of cards">
+        <h1> {{ card.title }}</h1>
+        <img [src]="card.image">
+        <h2> ფასი: {{ card.price }}</h2>
+        <p> id: {{ card.id }}</p>
+    </div>
+    <a href="#" class="buttonClass" (click)="addCards()">Show More Items</a>
+</div>
+<app-footer></app-footer>
